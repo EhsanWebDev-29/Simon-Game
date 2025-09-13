@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Game</title>
+    <link rel="icon" href="./favicon.ico/game.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="site-header">
+        <div class="logo">
+          <h1>Simon Game</h1>
+          <p class="subtitle">Test your Memory</p>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li class="info">Instructions</li>
+            <li class="dark-toggle">
+              <img id="mode-switch" aria-hidden="false" src="./images/light-off.png" alt="Toggle dark mode" />
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="rules hide">
+        <ul>
+            <li>🎯 Watch the color sequence carefully.</li>
+            <li>🎯 Click the buttons in the same order.</li>
+            <li>🎯 Each round adds a new color.</li>
+            <li>🎯 One wrong move — game over.</li>
+        </ul>
+      </div>
+
+      <main class="game-area">
+        <section class="main-container">
+          <button class="btn" id="blue" aria-label="blue"></button>
+          <button class="btn" id="red" aria-label="red"></button>
+          <button class="btn" id="green" aria-label="green"></button>
+          <button class="btn" id="yellow" aria-label="yellow"></button>
+          <div class="inner-circle"><span class="score">Level: 0</span></div>
+        </section>
+        <section class="msg-container hide"></section>
+        <button class="start-btn">Start Game</button>
+      </main>
+
+      <footer class="site-footer">
+        <div class="contacts">
+          <h3>Contact us</h3>
+          <ul>
+            <li><a href="mailto:ehsan.webdev29@gmail.com"><img src="./images/gmail.png" alt="Gmail" /></a></li>
+            <li><a href="https://github.com/EhsanWebDev-29"><img src="./images/github.png" alt="GitHub" /></a></li>
+            <li><a href="https://www.linkedin.com/in/ehsan-ahmad-1306a937b/"><img src="./images/linkedin.png" alt="LinkedIn" /></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Designed & Developed by <strong>Ehsan Ahmad</strong></p>
+        </div>
+        
+          <a class="resume" href="./images/Internship-29jun2025.pdf"><button class="resume-btn">Download Resume</button></a>
+        
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
